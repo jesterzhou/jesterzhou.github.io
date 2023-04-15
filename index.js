@@ -9,12 +9,12 @@ let date = new Date()
 const local_date = date.toLocaleDateString("en-US", options)
 let timezone = date.toString().substring(34)
 timezone = (timezone[1] + timezone[9] + timezone[18])
-const tz = timezone;
+
 
 function clock () {
     let clock = new Date() 
     let time = clock.toLocaleTimeString();
-    document.getElementById("clock").innerHTML = time + "\n" + tz;
+    document.getElementById("clock").innerHTML = time + "\n" + timezone;
     
 }
 
