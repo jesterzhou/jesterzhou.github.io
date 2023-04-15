@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap);
+
+/* inherit data from font family */
+h1,h2,h3,h4,h5,h6 {
+    font-family: Overpass Mono;
+    font-size: inherit;
+    font-weight: 500;
+    color: #eff1f5;
+    position: relative; top: 50px;
+
+}
+
+div#main {
+    font-family: Overpass Mono;
+    font-size: 16px;
+    font-weight:600;
+    
+    color: #cccccc;
+    width: auto;
+    margin: auto;
+    position: absolute; left: 80px; top:90px;
+    
+}
+li {
+    font-family: inherit;
+    color: #eff1f5;
+    padding: 2px;
+    position: relative; left: relative; top: 40px; bottom: 10px;
+    font-weight: 300;
+}
+
+html {
+    width: 100%;
+    margin: 0;
+
+    background-color: #171717;
+    background-size: 90px 90px;
+    background-image: 
+        linear-gradient(to right, #ffffff1a 0.2px, transparent 0.6px),
+        linear-gradient(to bottom, #ffffff1a 0.2px, transparent 0.6px);
+}
+
+a{
+    text-decoration: underline dotted;
+    color: inherit;
+}
+
+div#date {
+    font-family: Overpass Mono;
+    font-size: 14px;
+    font-weight:500;
+    width: auto;
+    margin: auto;
+
+    color: #cccccc;
+    position: absolute; left: 81px; top: 115px;
+}
+
+div#clock {
+    font-family: Overpass Mono;
+    font-size: 14px;
+    font-weight:500;
+
+    color: #cccccc;
+    position: absolute; left: 81px; top: 135px; 
+}
