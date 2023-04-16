@@ -11,7 +11,6 @@ const local_date = date.toLocaleDateString("en-US", options)
 let timezone = date.toString()
 timezone = (timezone[35] + timezone[43] + timezone[52])
 
-console.log(date)
 function clock () {
     let clock = new Date() 
     let time = clock.toLocaleTimeString("en-US", {timeZone: "America/New_York"});
