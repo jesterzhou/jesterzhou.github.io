@@ -3,7 +3,7 @@ function clock () {
     
     const dt_options = {
         day : "numeric",
-        month : "long",
+        month : "numeric",
         year : "numeric",
         
         timeZone : "America/New_York",
@@ -11,12 +11,12 @@ function clock () {
     }
 
     const d_t = new Date()
-    let d_t_str = (d_t.toLocaleTimeString("en-US", dt_options))
-
+    let d_t_str = (d_t.toLocaleTimeString("en-CA", dt_options))
+    console.log(d_t_str)
     const d_t_arr = [
-        d_t_str.slice(0,14), //date
-        d_t_str.slice(18, 29), //time
-        (d_t_str[30] + d_t_str[38] + d_t_str[47]) //timezone
+        d_t_str.slice(0,10), //date
+        d_t_str.slice(11, 25), //time
+        (d_t_str[26] + d_t_str[34] + d_t_str[50]) //timezone
     ]
     
     document.getElementById("date").innerHTML = d_t_arr[0]
@@ -26,5 +26,5 @@ function clock () {
 
 window.onload = () => {
     clock()
-    // setInterval(clock,1000)
+    setInterval(clock,1000)
 }
