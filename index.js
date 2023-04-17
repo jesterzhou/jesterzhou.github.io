@@ -1,22 +1,30 @@
 //date and time
-
-let date = new Date()
-const local_date = date.toLocaleDateString("en-US")
-
-let timezone = date.toTimeString()
-timezone = (timezone[19] + timezone[27] + timezone[36])
-
 function clock () {
-    let clock = new Date() 
-    let time = clock.toLocaleTimeString("en-US", {timeZone: "America/New_York"});
-    document.getElementById("clock").innerHTML = time + "\n " + timezone;
+    
+    const dt_options = {
+        day : "numeric",
+        month : "long",
+        year : "numeric",
+        
+        timeZone : "America/New_York",
+        timeZoneName: "long"
+    }
 
+    const d_t = new Date()
+    let d_t_str = (d_t.toLocaleTimeString("en-US", dt_options))
+
+    const d_t_arr = [
+        d_t_str.slice(0,14), //date
+        d_t_str.slice(18, 29), //time
+        (d_t_str[30] + d_t_str[38] + d_t_str[47]) //timezone
+    ]
+    
+    document.getElementById("date").innerHTML = d_t_arr[0]
+    document.getElementById("clock").innerHTML =( d_t_arr[1] + "\n" +d_t_arr[2])
 
 }
 
 window.onload = () => {
-    document.getElementById("date").innerHTML = local_date;
     clock()
-    setInterval(clock,1000)
-
+    // setInterval(clock,1000)
 }
