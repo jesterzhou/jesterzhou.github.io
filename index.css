@@ -1,67 +1,118 @@
-@import url(https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap);
 
-/* inherit data from font family */
-h1,h2,h3,h4,h5,h6 {
-    font-family: Overpass Mono;
-    font-size: inherit;
-    font-weight: 500;
-    color: #eff1f5;
-    position: relative; top: 50px;
-
+@font-face {
+    font-family: 'SuisseIntl-Regular';
+    src: url(./font/SuisseIntl-Regular.ttf);
 }
 
-div#main {
-    font-family: Overpass Mono;
-    font-size: 16px;
-    font-weight:600;
-    
-    color: #cccccc;
-    width: auto;
-    margin: auto;
-    position: absolute; left: 80px; top:90px;
-    
-}
-li {
-    font-family: inherit;
-    color: #eff1f5;
-    padding: 2px;
-    position: relative; left: relative; top: 40px; bottom: 10px;
-    font-weight: 300;
-    list-style-position: inside;
+@font-face {
+    font-family: 'Apple-Garamond';
+    src: url(./font/AppleGaramond.ttf);
 }
 
-html {
-    width: 100%;
+@font-face {
+    font-family: 'Fungal-Grow';
+    src: url(./font/Fungal-Grow500Thickness500.ttf);
+}
+
+/* variables */
+:root {
+    --bg-color: #ffffff;
+    --font-color: #222222;
+}
+
+/* core css stuff */
+* {
+    box-sizing: border-box;
+    padding: 0;
     margin: 0;
 
-    background-color: #171717;
-    background-size: 90px 90px;
-    background-image: 
-        linear-gradient(to right, #ffffff1a 0.2px, transparent 0.6px),
-        linear-gradient(to bottom, #ffffff1a 0.2px, transparent 0.6px);
 }
 
-a{
-    text-decoration: underline dotted;
-    color: inherit;
+body {
+    font-family: 'Arial ', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--font-color);
 }
 
-div#date {
-    font-family: Overpass Mono;
-    font-size: 14px;
-    font-weight:500;
-    width: auto;
-    margin: auto;
+/* container */
 
-    color: #cccccc;
-    position: absolute; left: 81px; top: 115px;
+.container {
+    max-width: 45%;
+    min-height: auto;
+
+    /* padding around content */
+    padding: 25px;
+
+    /* top-bottom margin 30px */
+    /* left-right margin auto */
+    /* margin around content */
+    margin: 30px auto; 
+
+    border: 1px solid;
+    border-radius: 0px;
 }
 
-div#clock {
-    font-family: Overpass Mono;
-    font-size: 14px;
-    font-weight:500;
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
-    color: #cccccc;
-    position: absolute; left: 81px; top: 135px; 
+    gap: 10px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
 }
+
+.contact {
+    font-family: 'SuisseIntl-Regular';
+    font-size: 16px;
+
+}
+
+.contact-item {
+    margin: 3px 0;
+}
+
+.redacted {
+    user-select: none;;
+    filter: blur(6px)
+}
+
+.mail {
+    /* inline : padding & margin only left-right, no top-bottom , no content wrapping */
+    /* inline-block : padding & margin left-right, top-bottom , no content wrapping*/
+    display: inline-block; 
+    
+    /* padding top-bottom, left-right of content */
+    padding: 2px 8px;
+
+    /* margin around content */
+    margin: 0px 3px;
+
+    border: 1px solid;
+    border-radius: 20px;
+
+    font-family: 'Apple-Garamond';
+    font-size: 16px;
+
+
+}
+
+.dropdown-menu {
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+}
+
+.content {
+    padding-left: 6px;
+}
+
+/*footer stuff*/
+footer {
+    min-height: 50px;
+}
+
