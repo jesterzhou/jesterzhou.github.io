@@ -34,14 +34,19 @@ body {
     color: var(--font-color);
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 /* container */
 
 .container {
-    max-width: 45%;
+    max-width: 30%;
     min-height: auto;
 
     /* padding around content */
-    padding: 25px;
+    padding: 20px;
 
     /* top-bottom margin 30px */
     /* left-right margin auto */
@@ -67,6 +72,8 @@ body {
 .contact {
     font-family: 'SuisseIntl-Regular';
     font-size: 16px;
+    
+    width: 100%;
 
 }
 
@@ -87,7 +94,7 @@ body {
     /* padding top-bottom, left-right of content */
     padding: 2px 8px;
 
-    /* margin around content */
+    /* margin top-bottom, left-right around content */
     margin: 0px 3px;
 
     border: 1px solid;
@@ -99,16 +106,46 @@ body {
 
 }
 
-.dropdown-menu {
-    display: flex;
-    flex-wrap: wrap;
 
+.content {
+
+    padding: 0px 0px;
+}
+
+/* border for dropdown menu */
+.dropdown-container { 
+
+    display: inline-block;
+
+    text-align: left;
+    
+    /* padding top, right, bottom, left of content */
+    padding: 1px 90px 2px 16px;
+
+    /* margin top-bottom, left-right around content */
+    margin: 2px 0px;
+
+    border: 1px solid;
+    border-radius: 0px;
+    
+    width: 0px;
+    height: auto;
 
 
 }
 
-.content {
-    padding-left: 6px;
+/* objects inside dropdown menu */
+.dropdown-items {
+
+
+    font-family: 'SuisseIntl-Regular';
+    font-size: 16px;
+
+}
+
+.svg {
+    display: inline;
+    content: url(./img/icon-select-dropdown.svg);
 }
 
 /*footer stuff*/
