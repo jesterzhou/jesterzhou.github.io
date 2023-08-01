@@ -9,24 +9,35 @@
     <script src="./index.js"></script>
     <title>jester</title>
 </head>
-<body>
+<body> 
     <div class="container">
-        <div class="nav"> 
-            <div class="contact">
-                <div class="contact-item">Jester Zhou</div>
-                <div class="contact-item">Mail to : <a href="mailto:jester@gmail.com"><div class="mail"> Contact Me</a> </div></div>
-                <div class="contact-item">Tel : <span class="redacted"> Unavailable</span> 
+        
+        <div class="nav">
+            <div class="grid-contact">
+                <div class="contact-item">Jester Zhou
+                    <div id="clock" class="contact-item">xxxxxxxx</div>
+                </div>
+                
+                <div id="mail-content" class="contact-item">
+                    <a href="mailto:jester@gmail.com">Contact Me</a>
+                </div>
+
             </div>
         </div>
-        <div class="content">
-            <div class="dropdown-container">
-                    <div class="dropdown-items"> <div class="svg" ></div> </img></div>
+            <div class="content">
+                <div tabindex=5 class="dropdown-container">
+                    <div class="grid-content">
+                        <img src="./img/icon-select-dropdown.svg" width="8" height="5" >
+                    </div>
+                    
+                    <div id="dropdown-items">
+                        <div onclick="a()" class="item">About</div>
+                        <div onclick="a()" class="item">Produce</div>
+                        <div onclick="a()" class="item">Miscellaneous</div>
+                    </div>
+
                 </div>
             </div>
-        </div>
     </div>
-    </div>
-    <!-- <footer class="revision">last updated:</footer> -->
-</body>
-
+        </body>
 </html>
