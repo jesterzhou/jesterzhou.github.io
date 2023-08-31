@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'AppleGaramond';
+    src: url('/font/AppleGaramond.ttf')
+}
+
+@font-face {
+    font-family: 'Favorit';
+    src: url('/font/Favorit.otf')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+}
+
+body {
+    background-color: rgb(238, 228, 203);
+    
+    
+}
+
+.container {
+    display: flex;
+    /* padding of content */
+    /* margin top-bottom , left-right around content*/
+    padding: 0.5vh 1vh;
+
+}
+
+.content {
+    
+    display: flex;
+
+    min-width: min-content;
+    width: 600px;
+
+    font-size: 1.9em;
+
+
+
+
+}
+
+.intro {
+    margin: 5px;
+}
+
+/* misc. stuff */
+.thing {
+    display: inline-flex;
+
+    /* padding of content */
+    padding: 3px 6px;
+    margin-bottom: 2px;
+
+    /* background-color: rgb(0, 0, 0); */
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+
+    color:rgb(0, 0, 0);
+    font-size: 24px;
+}
+
+.thing:hover {
+    background-color: black;
+    color: rgb(238, 228, 203);
+    
+    cursor: pointer;
+}
