@@ -1,176 +1,70 @@
-
 @font-face {
-    font-family: 'SuisseIntl-Regular';
-    src: url(./font/SuisseIntl-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'Apple-Garamond';
-    src: url(./font/AppleGaramond.ttf);
+    font-family: 'AppleGaramond';
+    src: url('/font/AppleGaramond.ttf')
 }
 
 @font-face {
-    font-family: 'Fungal-Grow';
-    src: url(./font/Fungal-Grow500Thickness500.ttf);
+    font-family: 'Favorit';
+    src: url('/font/Favorit.otf')
 }
 
-/* variables */
-:root {
-    --bg-color: #ffffff;
-    --font-color: #222222;
-}
-
-/* core css stuff */
 * {
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
-
+    padding: 0;
+    font-family: 'Times New Roman';
 }
 
 body {
-    font-family: 'SuisseIntl-Regular ', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--font-color);
+    background-color: rgb(238, 228, 203);
+    
+    
 }
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-button {
-    background-color: var(--bg-color);
-
-}
-
-/* container stuff */
 
 .container {
-    max-width: 32%;
-    min-height: auto;
-
-    /* padding around content */
-    padding: 20px;
-
-    /* margin top-bottom, left-right around content */
-    margin: 30px auto; 
-
-    border: 1px solid;
-    border-radius: 0px;
-}
-
-.nav {
-    /* margin top-bottom, left-right of nav */
-    margin: 2px 0px;
-}
-
-.grid-contact {
-    display: grid;
-    grid-template-columns: 8fr 1fr;
-    /* margin top-bottom, left-right of nav */
-    margin: 2px 0px;
-
-    font-size: 14px;
-    font-family: 'SuisseIntl-Regular';
+    display: flex;
+    /* padding of content */
+    /* margin top-bottom , left-right around content*/
+    padding: 0.5vh 1vh;
 
 }
 
-.contact-item {
-    margin: 3px 0px;
-}
-
-
-
-#mail-content {
+.content {
+    
     display: flex;
 
-    /* padding top-bottom, left-right of content */
-    padding: 2px 8px;
+    min-width: min-content;
+    width: 600px;
 
-    /* margin top-bottom, left-right around content */
-    margin: 0px 0px;
+    font-size: 1.9em;
 
 
-    border: 1px solid;
+
+
+}
+
+.intro {
+    margin: 5px;
+}
+
+/* misc. stuff */
+.thing {
+    display: inline-flex;
+
+    /* padding of content */
+    padding: 3px 6px;
+    margin-bottom: 2px;
+
+    /* background-color: rgb(0, 0, 0); */
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 20px;
 
-    font-family: 'Apple-Garamond';
-    font-size: 16px;
-
-    width: max-content;
-    height: min-content;
+    color:rgb(0, 0, 0);
+    font-size: 24px;
 }
 
-
-
-/* content stuff */
-.content {
-    margin: 2px 0px;
-    width: 100%;
-}
-
-.dropdown-container { 
-    /* padding top-bottom, left-right of content */
-    padding: 1px 0px;
-
-    /* margin top-bottom, left-right around content */
-    margin: 4px 0px;
-
-    border: 1px solid;
-    border-radius: 0px;
+.thing:hover {
+    background-color: black;
+    color: rgb(238, 228, 203);
     
-    width: 160px;
-    height: auto;
-
     cursor: pointer;
-
-    font-family: 'SuisseIntl-Regular';
 }
-
-.grid-content {
-    display: grid;
-    /* margin top, right, bottom, left around content */
-    margin: 5px 0px 0px 0px;
-
-}
-
-/* focus dropdown-container elements */
-.dropdown-container:focus > #dropdown-items > div.item{
-    display: flex;
-    font-size: 13px;
-}
-
-.dropdown-container:focus > .grid-content > img{
-    transform:rotate(180deg);
-}
-
-/* items inside dropdown-container */
-img {
-    display: inline;
-    
-    /* margin top, right, bottom, left around content */
-    margin: 0px 0px 3px 8.9em;
-    user-select: none;
-}
-
-#dropdown-items {    
-    /* margin top-bottom, left-right around content */
-    margin: 2px 5px;
-
-}
-
-.item {
-    display: none;
-}
-
-.item:hover {
-    text-indent: 10px;
-}
-
-
-/*footer stuff*/
-footer {
-    min-height: 50px;
-}
-
