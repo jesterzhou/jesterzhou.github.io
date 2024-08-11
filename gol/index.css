@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* built-in css */
+
+body { /* global body */
+    margin: 0;
+    overflow: hidden; 
+
+    font-family: Arial;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* classes etc... */
+
+.wrapper {
+    display: flex;
+}
+
+/* overlay for generation # and cell # */
+#overlay {
+
+    background-color: #ffffff9f;
+
+    margin: 10px;
+    padding: 5px;
+
+    border: 1px rgb(0, 0, 0) solid;
+
+    position: absolute;
+    user-select: none; 
+}
+
+/* what game of life is, and controls */
+#instructions {
+    background-color: #ffffff;
+
+    margin-left: auto;
+    margin-right: auto;    
+    margin-top: 10px;
+
+    padding: 5px;
+    min-width: fit-content;
+    width: min-content;
+
+    border: 1px rgb(0, 0, 0) solid;
+
+    position: absolute;
+    /* ignore left and right values, instead use margin-left and margin-right for spacing on sides */
+    left: 0; 
+    right: 0;
+
+}
+
+#keybinds {
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+#keys {
+    background-color: #ebebeb;
+
+    border: 1px black solid;
+    border-radius: 6px;
+
+    padding: 2px 7px 2px 7px;
+
+    width: min-content;;
+}
+
+#footer {
+    display: inline-grid;
+    
+    grid-template-columns: 1fr 1fr 1fr; 
+    width: 100%;
+
+    font-size: small;
+}
+
+.footer-child {
+    display: flex;
+    justify-content: end;
+
+    font-size: small;
+}
+
+#author {
+    justify-content: center;
+}
+
+
+
+/* using position:absolute to overlap canvas */
+/* top, right, bottom, left */
