@@ -21,27 +21,26 @@ img {
 }
 
 #project-wrapper {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
 
     margin: 12px;
 
     flex-wrap: wrap;
-    
+
 }
 
 .project {
     display: block;
 
     margin: 12px;
+    padding: 1em;
 
     min-width: 26vh;
     max-width: 26vh;
 
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
+    /* match largest card height */
+    height: 100%;
 
 
     border-radius: 10px;
