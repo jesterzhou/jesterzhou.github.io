@@ -1,15 +1,89 @@
-*{
+*{  
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
-#wrapper {
-    margin: 20px;   
+a {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+img {
+    max-width: 100%;
+    height: 50%;
+    width: 50%;
+}
+
+#project-wrapper {
+    display: flex;
+    justify-content: center;
+
+    margin: 12px;
+
+    flex-wrap: wrap;
+    
 }
 
 .project {
-    padding:5px;
-    margin-left: 5px;
+    display: block;
+
+    margin: 12px;
+
+    min-width: 26vh;
+    max-width: 26vh;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+    border-radius: 10px;
+    border: 2px rgba(0, 0, 0, 0.24) dashed;
+
+    text-align: center;
+}
+
+.header {
+    /* can comment out as parent class already has text-align: center applied */
+    /* text-align: center;  */
+
+    font-size: 1.6vh;
+}
+
+#published {
+    font-size: 1.4vh;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    font-size: 1.4vh;
+}
+
+.tags {
+    margin: 3px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    border: 1px black solid;
+    border-radius: 14px;
+}
+
+.project:hover {
+    border-radius: 10px;
+    border: 2px rgb(0, 0, 0) dashed;
 }
