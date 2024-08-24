@@ -5,40 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>static site projects hosted on github pages @ jesterzhou</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
+    <div id="general-wrapper">
+        completed static projects
+    </div>
     <div id="project-wrapper">
-
         <a href="gol/index.html" target="_blank"> 
             <div class="project">
                 <img src="assets/golphoto.png"></src>
                 <div class="header">conway's game of life</div>
-                <div class="header" id="published">published: aug 2024</div>
+                <div class="header" id="desc">infinite gol implemented in javascript</div>
 
                 <div class="content">
                     <div class="tags">html</div>
                     <div class="tags">css</div>
                     <div class="tags">javascript</div>
-                    <div class="tags">canvas api</div>
+
+                    <object><a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API" target="_blank" id="links">
+                        <div class="tags" id="links">
+                            canvas api
+                            </div>
+                        </a>
+                    </object>
+
                 </div>
             </div>
         </a>
-
-        <a href="gol/index.html" target="_blank"> 
-            <div class="project">
-                <img src="assets/golphoto.png"></src>
-                <div class="header">conway's game of life</div>
-                <div class="header" id="published">published: aug 2024</div>
-
-                <div class="content">
-                    <div class="tags">html</div>
-                    <div class="tags">css</div>
-
-                </div>
-            </div>
-        </a>        
-
-        
     </div>
+
+    <footer> 
+        <p>
+            <a class="links" href="https://www.linkedin.com/in/jesterzhou/" target="_blank">linkedin</a><br>
+            <a class="links" href="https://github.com/jesterzhou/" target="_blank">github</a>
+        </p>
+    </footer>
 </body>
 </html>
+
+<!-- wrap around <object> to have nested <a> -->
