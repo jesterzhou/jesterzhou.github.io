@@ -1,0 +1,3 @@
+[submodule "gol"]
+	path = gol
+	url = https://github.com/jesterzhou/gol/
